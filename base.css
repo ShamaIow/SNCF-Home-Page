@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, label, li, ul, ol, button, input, textarea {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 10em;
+    height: 100%;
+    width: 100%;
+}
+
+.nav-leftside {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.nav-menubtn {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 30px;
+}
+
+.nav-rightside {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+/* END OF THE NAVBAR */
+/* ------------------ */
+
+.background-img-presentation {
+    background-image: url("img/affichejep23-escalator-forum-vie-mobile-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+}
+
+.section-pcontent{
+    position: absolute;
+    transform: translate(0, 5em);
+    padding: 0 10em;
+}
+
+/* END OF THE PRESENTATION */
+/* ----------------------- */
+
+.menu-pcontent-p1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+    background-color: white;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    max-width: 800px;
+}
+
+.menu-pcontent-p2 {
+    display: flex;
+    max-width: 800px;
+    border-top: solid 1px gray;
+}
+
+.menu-pcontent-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.menu-pcontent-optionbtn {
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    padding: 1em 0 0.25em 0;
+    cursor: pointer;
+}
+
+.menu-pcontent-optionbtn, .selected {
+    color: #0088ce;
+}
+
+/* use .menu-pcontent-optionbtn-underline if .menu-pcontent-optionbtn contain the class selected */
+.menu-pcontent-optionbtn.selected .menu-pcontent-optionbtn-underline::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 50px;
+    background-color: #0088ce;
+    margin-top: 0.5em;
+}
+
+.menu-pcontent-optionbtn:not(.selected) {
+    color: #747678;
+}
+
+.menu-pcontent-optionbtn:hover {
+    color: #0088ce;
+}
+
+/* PT 2 */
+/* ----- */
+
+.menu-pcontent-p2 {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 3rem 3rem;
+    background-color: white;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.lieu-depart, .lieu-arrivee {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-pcontent-p2-input {
+    /* make the input transparent but not the placeholder */
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 2.5em;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.5em 0;
+}
+
+.menu-pcontent-p2-btn {
+    display: inline-block;
+    padding: 1rem 1.3rem;
+    color: white;
+    background-color: #0088ce;
+    border: 0;
+    border-radius: 7px;
+    line-height: 1.335 !important;
+    text-align: center;
+}
+
+.menu-pcontent-p2-btn.rounded {
+    border-radius: 50px;
+}
+
+/* END OF THE MENU */
+/* --------------- */
+
+.section-actu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 10em;
+}
+
+.actu-pres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1em;
+    width: 100%;
+}
+
+.sactu-actu1, .sactu-actu2 {
+    display: flex;
+    flex-direction: column;
+    text-wrap: wrap;
+    gap: 1em;
+}
+
+.sactu-actu1 {
+    width: 60%;
+}
+
+.sactu-actu2 {
+    width: 28.7%;
+}
+
+/* END OF THE ACTU */
+/* --------------- */
+
+.section-emploi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 10em;
+}
+
+.semploi-try {
+    max-width: 17rem;
+    padding: 1.6rem;
+    border-radius: 1rem;
+    margin-bottom: 8rem;
+    background-color: #a1006b !important;
+}
+
+@media (max-width: 1300px) {
+    .semploi-try {
+        margin: auto;
+        margin-bottom: 8rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .semploi-try {
+        margin-bottom: 6.4rem;
+        height: unset;
+    }
+}
+
+.semploi_radio {
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    cursor: pointer;
+    font: inherit;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.15rem solid white;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+.semploi_radio:checked {
+    background-color: white;
+}
+
+.semploi_radio:checked::after {
+    content: "";
+    display: block;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: #a1006b;
+}
+
+.semploi_radio:focus {
+    outline: none;
+}
+
+.semploi-btn {
+    display: inline-block;
+    padding: 1rem 1.3rem;
+    color: #a1006b;
+    background-color: white;
+    border: 0;
+    border-radius: 7px;
+    line-height: 1.335 !important;
+    text-align: center;
+}
+
+/* END OF THE EMPLOI */
+/* ----------------- */
+
+.section-video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 10em;
+}
+
+.carreviolet {
+    background-color: #6e1e78;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 8rem;
+    max-width: 17rem;
+}

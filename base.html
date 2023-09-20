@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>SNCF</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="nav-leftside">
+                <div style="display: flex; flex-direction: row; gap: 10px;">
+                    <img src="https://www.sncf.com/themes/contrib/sncf_theme/images/logo-sncf.svg" alt="logo SNCF" width="75" height="38" style="aspect-ratio: auto 75 / 38;">
+                    <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;"> 
+                        <a href="#">
+                            <div class="nav-menubtn">
+                                <div style="width: 100%; height: 3px; background-color: #0088ce; border-radius: 50px;"></div>
+                                <div style="width: 100%; height: 3px; background-color: #0088ce; border-radius: 50px;"></div>
+                                <div style="width: 100%; height: 3px; background-color: #0088ce; border-radius: 50px;"></div>
+                            </div>
+                        </a>
+                        <label style="color: #0088ce; font-size: large;">Menu</label>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-rightside">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <a href="#" style="text-decoration: none;"><i class="fa-solid fa-magnifying-glass" style="color: #0088ce;"></i></a>
+                    <div style="height: 30px; border: 1px solid gray;"></div>
+                    <a href="#" style="text-decoration: none;"><label style="color:#0088ce;">Mon compte ></label></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <section class="presentation">
+            <div class="section-pcontent">
+                <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                    <div>
+                        <!-- left column -->
+                        <h1 style="color: #333; font-size: 2rem; font-weight: 200; line-height: 1.2; text-transform: uppercase; word-wrap: break-word; margin-bottom: 1rem;">Ce week-end, embarquez pour les JEP !</h1>
+                        <p style="color: #333; line-height: 1.335;">200 événements pour découvrir le patrimoine ferroviaire</p>
+                    </div>
+                    <div>
+                        <!-- right column -->
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 10em;">
+                    <div style="display: flex; flex-direction: column;">
+                        <div class="menu-pcontent-p1">
+                            <div>
+                                <div class="menu-pcontent-options">
+                                    <span class="menu-pcontent-optionbtn selected">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span>Itinéraire</span>
+                                        <div class="menu-pcontent-optionbtn-underline"></div>
+                                    </span>
+                                    <span class="menu-pcontent-optionbtn">
+                                        <i class="fa-solid fa-ticket"></i>
+                                        <span>Réserver</span>
+                                        <div class="menu-pcontent-optionbtn-underline"></div>
+                                    </span>
+                                    <span class="menu-pcontent-optionbtn">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <span>Horaires en gare</span>
+                                        <div class="menu-pcontent-optionbtn-underline"></div>
+                                    </span>
+                                    <span class="menu-pcontent-optionbtn">
+                                        <i class="fa-solid fa-train"></i>
+                                        <span>N° de train</span>
+                                        <div class="menu-pcontent-optionbtn-underline"></div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-pcontent-p2">
+                            <div style="display: flex; flex-direction: row;">
+                                <div class="lieu-depart">
+                                    <label style="font-size: 0.9rem;">Lieu de départ</label>
+                                    <input type="text" class="menu-pcontent-p2-input" placeholder="Rechercher une adresse, une gare...">
+                                </div>
+                                <div>
+                                    <a href="#" style="text-decoration: none;">
+                                        <span class="menu-pcontent-p2-btn rounded" style="margin: 0 1em;">
+                                            <i class="fa-solid fa-exchange"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="lieu-arrivee">
+                                    <label style="font-size: 0.9rem;">Lieu d'arrivée</label>
+                                    <input type="text" class="menu-pcontent-p2-input" placeholder="Exemple : Gare du Nord, 1 rue Victor Hugo...">
+                                </div>
+                                <div>
+                                    <div style="display: flex; gap: 25px;">
+                                        <a href="#" style="text-decoration: none;">
+                                            <span class="menu-pcontent-p2-btn" style="margin-left: 1em;">
+                                                <i class="fa-solid fa-calendar"></i>
+                                            </span>
+                                        </a>
+                                        <a href="#" style="text-decoration: none;">
+                                            <span class="menu-pcontent-p2-btn">
+                                                Rechercher
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="background-img-presentation"></div>
+        </section>
+        <section>
+            <div class="section-actu">
+                <div class="actu-pres">
+                    <div class="sactu-actu1">
+                        <img src="img/2020-08-14-sncf-r-chantier-st-jean-de-maurienne-0153_0.jpg" alt="chantier SNCF" style="border-radius: 7px;">
+                        <h2 style="color: #333; font-size: 1.5rem; font-weight: 200; line-height: 1.2; text-transform: uppercase; word-wrap: break-word;">En coulisses : tout ce qu'on fait et que vous ne voyez pas</h2>
+                        <a href="#" style="color: #0088ce; font-weight: 500; text-decoration: none;">En savoir plus ></a>
+                    </div>
+                    <div class="sactu-actu2">
+                        <img src="img/train-du-rugby2.jpg" alt="train du rugby" style="border-radius: 7px;">
+                        <h2 style="color: #333; font-size: 1.5rem; font-weight: 200; line-height: 1.2; text-transform: uppercase; word-wrap: break-word; ">Le rugby expliqué par Antoine Dupont</h2>
+                        <a href="#" style="color: #0088ce; font-weight: 500; text-decoration: none;">En savoir plus ></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-emploi">
+                <div class="semploi-grid">
+                    <div style="display: flex; flex-direction: row; gap: 1em;">
+                        <div style="display: flex; flex-direction: column;">
+                            <div class="semploi-try">
+                                <h3 style="font-size: 1.2rem; font-weight: 900; line-height: normal; margin-bottom: 2rem; color: white;">Emploi : avez-vous le bon profil ?</h3>
+                                <div style="color: white; margin-bottom: 6em;">
+                                    <div style="display: flex; flex-direction: row; gap: 10px; margin-bottom: 1rem;">
+                                        <input type="checkbox" class="semploi_radio" id="radio1" name="radio1" value="radio1">
+                                        <label for="radio1">Vous êtes un conducteur chevronné</label>
+                                    </div>
+                                    <div style="display: flex; flex-direction: row; gap: 10px; margin-bottom: 1rem;">
+                                        <input type="checkbox" class="semploi_radio" id="radio2" name="radio2" value="radio2">
+                                        <label for="radio2">Vous êtes un ingénieur Bac + 12</label>
+                                    </div>
+                                    <div style="display: flex; flex-direction: row; gap: 10px; margin-bottom: 1rem;">
+                                        <input type="checkbox" class="semploi_radio" id="radio3" name="radio3" value="radio3">
+                                        <label for="radio3">Vous êtes sans diplôme, jusqu'à Bac+5, avec ou sans expérience</label>
+                                    </div>
+                                </div>
+                                <div style="display: flex; justify-content: center;">
+                                    <div>
+                                        <a href="#">
+                                            <div class="semploi-btn">
+                                                <span>Tentez votre chance</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <div>
+                                <img src="img/sncf-tgv-m-1e-classe-vue.jpg" alt="TGV" style="border-radius: 7px;">
+                            </div>
+                            <div>
+                                <h2 style="color: #333; font-size: 1.5rem; font-weight: 200; line-height: 1.2; text-transform: uppercase; word-wrap: break-word;">Innovants, durables et ergonomiques... voici les sièges du futur TGV</h2>
+                                <a href="#" style="color: #0088ce; font-weight: 500; text-decoration: none;">En savoir plus ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-actu">
+                <div class="actu-pres">
+                    <div class="sactu-actu1">
+                        <img src="img/shutterstock_editorial_2088086440.jpg" alt="chantier SNCF" style="border-radius: 7px;">
+                        <h2 style="color: #333; font-size: 1.5rem; font-weight: 200; line-height: 1.2; text-transform: uppercase; word-wrap: break-word;">Nos terrains non utilisés ? Bientôt, 20 000 logements y seront créés</h2>
+                        <a href="#" style="color: #0088ce; font-weight: 500; text-decoration: none;">En savoir plus ></a>
+                    </div>
+                    <div class="sactu-actu2">
+                        <img src="img/ferme-solaire-small.jpg" alt="train du rugby" style="border-radius: 7px;">
+                        <h2 style="color: #333; font-size: 1.5rem; font-weight: 200; line-height: 1.2; text-transform: uppercase; word-wrap: break-word; ">Être autonomes en énergie en 2050</h2>
+                        <a href="#" style="color: #0088ce; font-weight: 500; text-decoration: none;">En savoir plus ></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-video">
+                <div style="display: flex; flex-direction: row; gap: 1.5em;">
+                    <div class="carreviolet">
+                        <h3 style="margin-bottom: 1rem; font-weight: 600; color: white; font-size: 1.2rem;">Voyage dans le temps</h3>
+                        <h5 style="padding-bottom: 1.2rem; color: white;">Vous rêvez de monter dans un train à vapeur ? Rendez-vous, ce week-end, à Limoges durant les Journées européennes du patrimoine.</h5>
+                        <a href="#" style="color: white; font-weight: 500; text-decoration: none;">En savoir plus ></a>
+                    </div>
+                    <iframe width="1040" height="370" src="https://www.youtube.com/embed/B3Ik0kn0k80" title="Tu connais le train à vapeur de Limoges ? // Bruno Maltor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="base.js"></script>
+</body>
